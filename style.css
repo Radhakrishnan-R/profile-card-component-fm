@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    /* background-image: url("./images/bg-pattern-top.svg"); */
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 52vw bottom 30vh, left 48vw top 52vh;
+    
+}
+
+.container{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+.banner{
+    height: 150px;
+    background-image: url("./images/bg-pattern-card.svg");
+    width: 100%;
+}
+
+.profile-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.image-holder{
+    height: 100px;
+    width: 100px;
+    clip-path: circle(50%);
+    border-radius: 50%;
+    border: 8px solid white;
+    margin-top: -24%;
+}
+
+.profile-holder  img{
+    width: 100%;
+    clip-path: circle(50%);
+}
+
+h1{
+    font-size: 1.5rem;
+    margin: 16px  0px;
+}
+
+h1 > span{
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    margin-left: 10px;
+}
+
+p{
+    color: hsl(0, 0%, 59%);
+}
+
+.profile-status-holder{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    gap: 3rem;
+    text-align: center;
+}
+
+hr{
+    height: 1px;
+    background-color: hsla(0, 0%, 59%, 0.274);
+    border: none;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+@media (max-width:400px){
+    body{
+        height: auto;
+    }
+
+    .container{
+        width: auto;
+        display: block;
+        margin-top: 30px;
+    }
+
+    .profile-status-holder{
+        padding: 16px;
+    }
+
+    .image-holder{
+        margin-top: -30%;
+    }
+}
